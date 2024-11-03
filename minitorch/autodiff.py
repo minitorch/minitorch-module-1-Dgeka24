@@ -79,6 +79,7 @@ def topological_sort(variable: Variable) -> Iterable[Variable]:
     dfs(variable)
     return ans[::-1]
 
+
 def backpropagate(variable: Variable, deriv: Any) -> None:
     """
     Runs backpropagation on the computation graph in order to
